@@ -4,38 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock , paper  and scissors</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <title>bd</title>
 </head>
 <body>
-    <section class="game">
-        <div class="score">
-            <div class="player-score">
-                <h2>Player</h2>
-                <p>0</p>                
-            </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p class="com">0</p>
-            </div>
-        </div>
-        <div class="intro">
-            <h1>Rock , Paper and Scissors</h1>
-            <button class="start-play">Let's play</button>
-        </div>
-        <div class="match fadeOut">
-            <h2 class="winner"> Choose an option</h2>
-            <div class="hands">
-                <img  class="player-hand" src="./images/rock.png" alt="player hand rock">
-                <img  class="computer-hand" src="./images/rockc.png" alt="computer hand rock">
-            </div>
-            <div class="options">
-            <button class="rock">rock</button>
-            <button class="paper">paper</button>
-            <button class="scissors">scissors</button>
-            </div>
-        </div>
-    </section>
-    <script src="index.js"></script>
+    <div class="wrapper-input">
+        <input type="date" id="inputDate">
+    <button id="sub" onclick="calculateBirthDay()">submit</button>
+    </div>
+    <div class="output">
+        <h2 id="year"></h2>
+        <h2 id="month"></h2>
+        <h2 id="days"></h2>
+
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
